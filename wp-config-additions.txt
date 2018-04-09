@@ -2,3 +2,24 @@
 
 define( 'WP_MEMORY_LIMIT', '256M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+
+define('WP_ALLOW_MULTISITE', true);
+
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', true );
+$base = '/';
+define( 'DOMAIN_CURRENT_SITE', 'www.kevinlitzenberg.com' );
+define( 'PATH_CURRENT_SITE', '/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
+
+
+/*Themes*/
+define( 'SUNRISE', 'on' );
+
+/*Define a location for temp file uploads*/
+define('WP_TEMP_DIR', '/home/tmp');
+
+/*Allow update themes.*/
+define('FS_METHOD', 'direct');
+ 
