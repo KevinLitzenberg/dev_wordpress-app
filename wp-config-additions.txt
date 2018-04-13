@@ -13,13 +13,11 @@ define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 
-
-/*Themes*/
-define( 'SUNRISE', 'on' );
-
 /*Define a location for temp file uploads*/
 define('WP_TEMP_DIR', '/home/tmp');
 
 /*Allow update themes.*/
 define('FS_METHOD', 'direct');
- 
+
+/*Adjust Cookies for Multi Site*/
+define( 'COOKIE_DOMAIN', $_SERVER[ 'HTTP_HOST' ] ); 
